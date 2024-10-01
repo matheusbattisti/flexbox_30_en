@@ -1,0 +1,181 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.flex-container {
+    display: flex;
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.flex-item {
+    background-color: #2196F3;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* 2. flex-direction */
+.direction-row {
+    flex-direction: row;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+/* 3. flex-wrap */
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+/* Set a width to cause wrapping */
+.wrap .flex-item,
+.nowrap .flex-item {
+    flex: 0 0 30%;
+}
+
+/* 4. justify-content */
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+/* 5. align-items */
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-flex-start {
+    align-items: flex-start;
+}
+
+.align-flex-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.tall {
+    height: 100px;
+}
+
+.short {
+    height: 50px;
+}
+
+/* 6. align-content */
+.align-content-flex-start {
+    align-content: flex-start;
+    height: 200px; /* Set height to demonstrate align-content */
+}
+
+.align-content-flex-start .box {
+    flex: 0 0 30%;
+}
+
+.box {
+    background-color: #4CAF50;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* 7. order */
+.order-example .flex-item {
+    flex: 1;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+/* 8. flex-grow, flex-shrink, flex-basis */
+.grow-example .flex-item {
+    flex-basis: 100px;
+}
+
+.grow1 {
+    flex-grow: 1;
+}
+
+.grow2 {
+    flex-grow: 2;
+}
+
+/* 9. align-self */
+.align-self-example {
+    align-items: flex-start; /* Set default for comparison */
+    height: 200px;
+}
+
+.align-self-example .flex-item {
+    flex: 1;
+    margin: 5px;
+}
+
+.self-flex-start {
+    align-self: flex-start;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.self-flex-end {
+    align-self: flex-end;
+}
